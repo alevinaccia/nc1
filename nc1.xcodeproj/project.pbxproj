@@ -7,22 +7,55 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C01DBBB5292B7B7F00C6AE8D /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01DBBB4292B7B7F00C6AE8D /* Data.swift */; };
+		C01DBBB9292BE23000C6AE8D /* EditableRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01DBBB8292BE23000C6AE8D /* EditableRow.swift */; };
 		C01F3A352924D2CC00771B24 /* nc1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01F3A342924D2CC00771B24 /* nc1App.swift */; };
 		C01F3A372924D2CC00771B24 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01F3A362924D2CC00771B24 /* ContentView.swift */; };
 		C01F3A392924D2CD00771B24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C01F3A382924D2CD00771B24 /* Assets.xcassets */; };
 		C01F3A3C2924D2CD00771B24 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C01F3A3B2924D2CD00771B24 /* Preview Assets.xcassets */; };
+		C01F3A442924E28B00771B24 /* workoutCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01F3A432924E28B00771B24 /* workoutCard.swift */; };
+		C01F3A472924E3C700771B24 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01F3A462924E3C700771B24 /* Workout.swift */; };
+		C01F3A492924F4FA00771B24 /* WorkoutPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01F3A482924F4FA00771B24 /* WorkoutPage.swift */; };
+		C096CCE529291E5900C2A0DC /* SeriesRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C096CCE429291E5900C2A0DC /* SeriesRow.swift */; };
+		C096CCED29292FAE00C2A0DC /* nc1_whatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C096CCEC29292FAE00C2A0DC /* nc1_whatchApp.swift */; };
+		C096CCEF29292FAE00C2A0DC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C096CCEE29292FAE00C2A0DC /* ContentView.swift */; };
+		C096CCF129292FAF00C2A0DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C096CCF029292FAF00C2A0DC /* Assets.xcassets */; };
+		C096CCF429292FAF00C2A0DC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C096CCF329292FAF00C2A0DC /* Preview Assets.xcassets */; };
+		C096CCF92929365600C2A0DC /* ActiveWorkout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C096CCF82929365600C2A0DC /* ActiveWorkout.swift */; };
+		C096CCFB2929391E00C2A0DC /* exercisePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C096CCFA2929391E00C2A0DC /* exercisePage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C01DBBB4292B7B7F00C6AE8D /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		C01DBBB8292BE23000C6AE8D /* EditableRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditableRow.swift; sourceTree = "<group>"; };
+		C01DBBBA292CBAA500C6AE8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C01F3A312924D2CC00771B24 /* nc1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nc1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C01F3A342924D2CC00771B24 /* nc1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nc1App.swift; sourceTree = "<group>"; };
 		C01F3A362924D2CC00771B24 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C01F3A382924D2CD00771B24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C01F3A3B2924D2CD00771B24 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C01F3A432924E28B00771B24 /* workoutCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = workoutCard.swift; sourceTree = "<group>"; };
+		C01F3A462924E3C700771B24 /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
+		C01F3A482924F4FA00771B24 /* WorkoutPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutPage.swift; sourceTree = "<group>"; };
+		C096CCE429291E5900C2A0DC /* SeriesRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesRow.swift; sourceTree = "<group>"; };
+		C096CCEA29292FAE00C2A0DC /* nc1_whatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "nc1_whatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C096CCEC29292FAE00C2A0DC /* nc1_whatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nc1_whatchApp.swift; sourceTree = "<group>"; };
+		C096CCEE29292FAE00C2A0DC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C096CCF029292FAF00C2A0DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C096CCF329292FAF00C2A0DC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C096CCF82929365600C2A0DC /* ActiveWorkout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveWorkout.swift; sourceTree = "<group>"; };
+		C096CCFA2929391E00C2A0DC /* exercisePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exercisePage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C01F3A2E2924D2CC00771B24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C096CCE729292FAE00C2A0DC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				C01F3A332924D2CC00771B24 /* nc1 */,
+				C096CCEB29292FAE00C2A0DC /* nc1_watch Watch App */,
 				C01F3A322924D2CC00771B24 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				C01F3A312924D2CC00771B24 /* nc1.app */,
+				C096CCEA29292FAE00C2A0DC /* nc1_whatch Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,8 +86,10 @@
 		C01F3A332924D2CC00771B24 /* nc1 */ = {
 			isa = PBXGroup;
 			children = (
+				C01DBBBA292CBAA500C6AE8D /* Info.plist */,
+				C01F3A452924E3AF00771B24 /* Model */,
 				C01F3A342924D2CC00771B24 /* nc1App.swift */,
-				C01F3A362924D2CC00771B24 /* ContentView.swift */,
+				C01F3A422924E23A00771B24 /* View */,
 				C01F3A382924D2CD00771B24 /* Assets.xcassets */,
 				C01F3A3A2924D2CD00771B24 /* Preview Content */,
 			);
@@ -63,6 +100,48 @@
 			isa = PBXGroup;
 			children = (
 				C01F3A3B2924D2CD00771B24 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C01F3A422924E23A00771B24 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C01F3A362924D2CC00771B24 /* ContentView.swift */,
+				C01F3A432924E28B00771B24 /* workoutCard.swift */,
+				C01F3A482924F4FA00771B24 /* WorkoutPage.swift */,
+				C096CCE429291E5900C2A0DC /* SeriesRow.swift */,
+				C096CCF82929365600C2A0DC /* ActiveWorkout.swift */,
+				C096CCFA2929391E00C2A0DC /* exercisePage.swift */,
+				C01DBBB8292BE23000C6AE8D /* EditableRow.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C01F3A452924E3AF00771B24 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C01DBBB4292B7B7F00C6AE8D /* Data.swift */,
+				C01F3A462924E3C700771B24 /* Workout.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C096CCEB29292FAE00C2A0DC /* nc1_watch Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				C096CCEC29292FAE00C2A0DC /* nc1_whatchApp.swift */,
+				C096CCEE29292FAE00C2A0DC /* ContentView.swift */,
+				C096CCF029292FAF00C2A0DC /* Assets.xcassets */,
+				C096CCF229292FAF00C2A0DC /* Preview Content */,
+			);
+			path = "nc1_watch Watch App";
+			sourceTree = "<group>";
+		};
+		C096CCF229292FAF00C2A0DC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C096CCF329292FAF00C2A0DC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -87,6 +166,23 @@
 			productReference = C01F3A312924D2CC00771B24 /* nc1.app */;
 			productType = "com.apple.product-type.application";
 		};
+		C096CCE929292FAE00C2A0DC /* nc1_whatch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C096CCF729292FAF00C2A0DC /* Build configuration list for PBXNativeTarget "nc1_whatch Watch App" */;
+			buildPhases = (
+				C096CCE629292FAE00C2A0DC /* Sources */,
+				C096CCE729292FAE00C2A0DC /* Frameworks */,
+				C096CCE829292FAE00C2A0DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "nc1_whatch Watch App";
+			productName = "nc1_whatch Watch App";
+			productReference = C096CCEA29292FAE00C2A0DC /* nc1_whatch Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -98,6 +194,9 @@
 				LastUpgradeCheck = 1410;
 				TargetAttributes = {
 					C01F3A302924D2CC00771B24 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					C096CCE929292FAE00C2A0DC = {
 						CreatedOnToolsVersion = 14.1;
 					};
 				};
@@ -116,6 +215,7 @@
 			projectRoot = "";
 			targets = (
 				C01F3A302924D2CC00771B24 /* nc1 */,
+				C096CCE929292FAE00C2A0DC /* nc1_whatch Watch App */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +230,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C096CCE829292FAE00C2A0DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C096CCF429292FAF00C2A0DC /* Preview Assets.xcassets in Resources */,
+				C096CCF129292FAF00C2A0DC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -137,8 +246,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C01F3A442924E28B00771B24 /* workoutCard.swift in Sources */,
 				C01F3A372924D2CC00771B24 /* ContentView.swift in Sources */,
+				C096CCFB2929391E00C2A0DC /* exercisePage.swift in Sources */,
+				C01DBBB9292BE23000C6AE8D /* EditableRow.swift in Sources */,
+				C096CCF92929365600C2A0DC /* ActiveWorkout.swift in Sources */,
 				C01F3A352924D2CC00771B24 /* nc1App.swift in Sources */,
+				C01F3A472924E3C700771B24 /* Workout.swift in Sources */,
+				C01F3A492924F4FA00771B24 /* WorkoutPage.swift in Sources */,
+				C01DBBB5292B7B7F00C6AE8D /* Data.swift in Sources */,
+				C096CCE529291E5900C2A0DC /* SeriesRow.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C096CCE629292FAE00C2A0DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C096CCEF29292FAE00C2A0DC /* ContentView.swift in Sources */,
+				C096CCED29292FAE00C2A0DC /* nc1_whatchApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +396,7 @@
 				DEVELOPMENT_TEAM = 7272LWF3H8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = nc1/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +426,7 @@
 				DEVELOPMENT_TEAM = 7272LWF3H8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = nc1/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -314,6 +442,66 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C096CCF529292FAF00C2A0DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"nc1_watch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 7272LWF3H8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = nc1_whatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = .watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Debug;
+		};
+		C096CCF629292FAF00C2A0DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"nc1_watch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 7272LWF3H8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = nc1_whatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = .watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
 			};
 			name = Release;
 		};
@@ -334,6 +522,15 @@
 			buildConfigurations = (
 				C01F3A402924D2CD00771B24 /* Debug */,
 				C01F3A412924D2CD00771B24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C096CCF729292FAF00C2A0DC /* Build configuration list for PBXNativeTarget "nc1_whatch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C096CCF529292FAF00C2A0DC /* Debug */,
+				C096CCF629292FAF00C2A0DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

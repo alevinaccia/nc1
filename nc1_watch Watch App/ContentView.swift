@@ -1,8 +1,8 @@
 //
 //  ContentView.swift
-//  nc1
+//  nc1_watch Watch App
 //
-//  Created by Alessandro Vinaccia on 16/11/22.
+//  Created by Alessandro Vinaccia on 19/11/22.
 //
 
 import SwiftUI
