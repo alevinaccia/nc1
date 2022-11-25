@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Charts
 
 struct ContentView: View {
     
@@ -37,23 +38,32 @@ struct ContentView: View {
                 .frame(width: 375, height: 200)
                 
                 ScrollView(.horizontal, showsIndicators: false){
-                    HStack() {
+                    HStack{
                         ForEach(userVM.workouts){ workout in
-                            
                             NavigationLink {
                                 WorkoutPage(workout : workout)
                             } label: {
                                 workoutCard(workout: workout)
                             }.foregroundColor(.black)
-                                
-                            
                         }
-                        
                     }
-                    .padding(.vertical, 55)
-                }
+                    .padding(.vertical, 40)
+                    .padding()
+                }.frame(width: 400)
+                VStack(alignment:.leading){
+                    Text("Progress").font(.title2)
+                    Chart(userVM.history){ item in
+                        LineMark(
+                            x: .value("day" ,item.timeStamp),
+                            y: .value("increment" ,item.value)
+                        ).foregroundStyle(by: .value("woName", item.woName))
+                    }
+                }.padding()
+                    .onAppear {
+                        self.userVM.readData()
+                    }
                 Spacer()
-            }.padding(.horizontal).navigationTitle("Mywellness")
+            }.navigationTitle("Mywellness")
             
         }
     }

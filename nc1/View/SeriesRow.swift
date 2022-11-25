@@ -22,7 +22,7 @@ struct SeriesRow: View {
                 HStack{
                     Text("\(series.exe.improvement)%").font(.system(size: 13))
                     Image(systemName: "arrow.up")
-                }.frame(width: 55)
+                }.frame(width: 60)
                 .foregroundColor( series.exe.improvement > 0 ? .green : .red)
             }
             .frame(maxWidth: .infinity,alignment: .trailing)

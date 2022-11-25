@@ -25,6 +25,7 @@ struct EditableRow: View {
                         .toggleStyle(.button)
                         .tint(.mint)
                         .onChange(of: lr.done) { newValue in
+                            lr.setVolume()
                             if timerGoing {
                                 count = 0
                             }

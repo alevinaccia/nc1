@@ -10,13 +10,16 @@ import UserNotifications
 
 struct exercisePage: View {
     
-    @State var exercise : Series
+    @Binding var exercise : Series
     @State var timerGoing : Bool = false
     @State var time = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     @State var count : Int = 0
     @State var to : CGFloat = 0
     
-    //@Binding var sel : Int
+    @State var flag : Bool = false
+    
+    @Binding var sel : Int
+    @Binding var status : Int
     
     var body: some View {
         VStack(spacing: 20){
@@ -25,14 +28,14 @@ struct exercisePage: View {
                 Text("Reps")
                 Text("Rec")
             }
-            
             ForEach($exercise.loadRep) { $lr in
                 EditableRow(lr: $lr, rec: $exercise.rec, timerGoing: $timerGoing, completedExe: $exercise.completed, count: $count)
                     .onChange(of: lr.done){ newValue in
                         if exercise.loadRep.firstIndex(where: { $0.done == false}) ?? -1 == -1 {
-                            exercise.completed = true;
-                            withAnimation(){
-                               // sel += 1
+                            exercise.completed = true
+                            withAnimation(.default){
+                                status += 1
+                                sel += 1
                             }
                         }
                     }
@@ -50,22 +53,21 @@ struct exercisePage: View {
                     .rotationEffect(.init(degrees: -90))
                 Text("\(exercise.rec)").font(.system(size: 36))
             }
-        }.navigationTitle(exercise.exe.name)
-            .onAppear(perform: {
-                UNUserNotificationCenter.current().requestAuthorization(options: [.badge,.sound,.alert], completionHandler: {(_,_) in
-                    
-                })
-            })
+        }.onAppear(perform: {
+            UNUserNotificationCenter.current().requestAuthorization(options: [.badge,.sound,.alert]) { (succ, error) in
+                
+            }
+        })
+        .navigationTitle(exercise.exe.name)
         .onReceive(self.time){ _ in
             if timerGoing{
                 if self.count != exercise.rec {
-                    print("going \(self.count)")
                     self.count += 1
+                    print("counting")
                     withAnimation(.default){
                         self.to = CGFloat(self.count) / CGFloat(exercise.rec)
                     }
                 }else {
-                    print("should notify")
                     self.timerGoing = false
                     self.Notify()
                 }
@@ -75,8 +77,9 @@ struct exercisePage: View {
     
     func Notify(){
         let content = UNMutableNotificationContent()
-        content.title = "Recovery time is up"
-        content.body = "Time for the next exercise!"
+        content.title = "Rec time is up!"
+        content.body = "Time to get back to work"
+        content.sound = .default
         
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1, repeats: false)
         
@@ -86,10 +89,10 @@ struct exercisePage: View {
     }
     
 }
-
-struct exercisePage_Previews: PreviewProvider {
-    static var previews: some View {
-        exercisePage(exercise: Series(exe: Exercise(name: "Alzate Laterali", image: "", improvement: 0), rec: 30, loadRep: [Vector2(x: 5, y: 10), Vector2(x: 5, y: 10), Vector2(x: 5, y: 10), Vector2(x: 5, y: 10)]))
-    }
-}
+//
+//struct exercisePage_Previews: PreviewProvider {
+//    static var previews: some View {
+//        exercisePage(exercise: Series(exe: Exercise(name: "Alzate Laterali", image: "", improvement: 0), rec: 30, loadRep: [Vector2(x: 5, y: 10), Vector2(x: 5, y: 10), Vector2(x: 5, y: 10), Vector2(x: 5, y: 10)]))
+//    }
+//}
 

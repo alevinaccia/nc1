@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21512" systemVersion="22A380" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Exercise" representedClassName="Exercise" syncable="YES">
+        <attribute name="image" optional="YES" attributeType="String"/>
+        <attribute name="improvement" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="exeToSeries" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Series" inverseName="seriesToExe" inverseEntity="Series"/>
+    </entity>
+    <entity name="Series" representedClassName="Series" syncable="YES">
+        <attribute name="completed" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="rec" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="seriesToExe" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Exercise" inverseName="exeToSeries" inverseEntity="Exercise"/>
+        <relationship name="seriesToLr" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Vector3" inverseName="lrToSeries" inverseEntity="Vector3"/>
+        <relationship name="seriesToWorkout" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Workout" inverseName="workoutToSchema" inverseEntity="Workout"/>
+    </entity>
+    <entity name="Vector3" representedClassName="Vector3" syncable="YES">
+        <attribute name="done" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="volume" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="x" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="y" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="lrToSeries" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Series" inverseName="seriesToLr" inverseEntity="Series"/>
+    </entity>
+    <entity name="Workout" representedClassName="Workout" syncable="YES">
+        <attribute name="duration" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="last" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="workoutToSchema" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Series" inverseName="seriesToWorkout" inverseEntity="Series"/>
+    </entity>
+</model>

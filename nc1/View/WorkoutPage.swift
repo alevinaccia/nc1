@@ -8,10 +8,9 @@
 import SwiftUI
 
 struct WorkoutPage: View {
-    let workout : Workout
+    @State var workout : Workout
     
     var body: some View {
-        //Testing purposes
             VStack(alignment: .center, spacing: 30){
                 HStack(spacing: 70){
                     VStack{
@@ -26,19 +25,19 @@ struct WorkoutPage: View {
                             .resizable()
                             .frame(width: 40, height: 40)
                             .foregroundColor(Color.black)
-                        Text(workout.difficulty.rawValue)
+                        Text("Intermediate")
                     }
                     VStack{
                         Image(systemName: "calendar")
                             .resizable()
                             .frame(width: 40, height: 40)
                             .foregroundColor(Color.black)
-                        Text("\(workout.duration)'")
+                        Text("\(workout.last.formatted(.dateTime.day().month()))")
                     }
                 }
                 VStack{
                     HStack{
-                        Text("List of exercises").font(.system(size: 17)).fontWeight(.semibold)
+                        Text("List of exercises").font(.system(size: 17)).fontWeight(.semibold).padding()
                         Spacer()
                     }
                     ScrollView{
@@ -50,7 +49,7 @@ struct WorkoutPage: View {
                 }
                 
                 NavigationLink {
-                    ActiveWorkout(workout : workout)
+                    ActiveWorkout(workout : $workout)
                 } label: {
                     ZStack{
                         Rectangle()
